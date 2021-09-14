@@ -7,11 +7,14 @@ import cars from "./cars";
 const { width, height } = Dimensions.get("window");
 
 const CarsList = (props) => {
+  const renderItem = ({ item }) => <CarItem car={item} />;
+
   return (
     <View style={styles.container}>
       <FlatList
         data={cars}
-        renderItem={({ item }) => <CarItem car={item} />}
+        renderItem={renderItem}
+        keyExtractor={(item) => item.name}
         showsVerticalScrollIndicator={false}
         snapToAlignment={"start"}
         decelerationRate={"fast"}
