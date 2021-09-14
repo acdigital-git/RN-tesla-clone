@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, ImageBackground, Pressable } from "react-native";
+import { Text, View, ImageBackground } from "react-native";
 import StyledButton from "../StyledButton";
 import styles from "./styles";
 
