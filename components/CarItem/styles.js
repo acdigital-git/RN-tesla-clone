@@ -1,9 +1,11 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
+
+const { width, height } = Dimensions.get("window");
 
 const styles = StyleSheet.create({
   carContainer: {
-    width: "100%",
-    height: "100%",
+    width: width,
+    height: height,
   },
   titles: {
     marginTop: "30%",
@@ -19,7 +21,7 @@ const styles = StyleSheet.create({
     color: "#5c5e62",
   },
 
-  tagLineCTA: {
+  taglineCTA: {
     textDecorationLine: "underline",
   },
   backgroundImage: {
