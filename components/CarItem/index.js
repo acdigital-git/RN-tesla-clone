@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, ImageBackground } from "react-native";
+import { Text, View, ImageBackground, Pressable } from "react-native";
 import StyledButton from "../StyledButton";
 import styles from "./styles";
 
@@ -12,7 +12,12 @@ const CarItem = (props) => {
         <Text style={styles.title}>{name}</Text>
         <Text style={styles.subtitle}>
           {`${tagline} `}
-          <Text style={styles.taglineCTA}>{taglineCTA}</Text>
+          <Text
+            style={styles.taglineCTA}
+            onPress={() => console.log(`CTA of ${name} was pressed`)}
+          >
+            {taglineCTA}
+          </Text>
         </Text>
       </View>
 

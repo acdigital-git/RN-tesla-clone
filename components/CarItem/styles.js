@@ -20,7 +20,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#5c5e62",
   },
-
   taglineCTA: {
     textDecorationLine: "underline",
   },
